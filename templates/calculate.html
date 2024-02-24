@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculations of subjects</h2>
+
+<form action="{{ url_for('calculate')}}" method="post">
+    
+    <input type="text" name="science" placeholder="Science" required="required"><br>
+    <input type="text" name="maths" placeholder="Maths" required="required"><br>
+    <input type="text" name="history" placeholder="History" required="required"><br>
+
+    <button type="text" class="btn btn-primary btn-block btn-large ">Calculate button</button>
+    <br><br>
+    
+  </form>
+  
+<p>form action="{{ url_for('calculate')}}" method="post" in the action we redirect it to that url ie jinja2 works</p>
+
+<p>Also note that the default width of text input fields is 20 characters.
+    REDIRECT IS USED WITHIN THE SAME FILE/ CODE IE THE SAME PAGE
+    RENDER_TEMPLATE IS USED TO FETCH THE HTML FILES IN THE TEMPLATES FOLDER
+</p>
+
+
+
+</body>
+</html>
